@@ -5,10 +5,10 @@
     margin-left: 6.5em;
     width: 70%;
 }
-.headerimg img{
-    position: absolute;
+/* .headerimg img{
+    /* position: absolute; 
 
-}
+} */
 .headerimg .planet{
     z-index: 2;
 }
