@@ -23,7 +23,7 @@ function Skills() {
             items: 2
         },
         mobile: {
-            breakpoint: { max: 450, min: 0 },
+            breakpoint: { max: 4, min: 0 },
             items: 1
         }
     };
