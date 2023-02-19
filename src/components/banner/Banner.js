@@ -12,7 +12,7 @@ function Banner() {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["FullStack javascrip", "Profesional Clown"];
+    const toRotate = ["Web Developer", "FullStack javascrip", "Profesional Clown"];
     const period = 2000;
 
 
@@ -58,7 +58,7 @@ function Banner() {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio </span>
-                                    <h1>{`Hi! I'm Abraham Lillo (Toffy Caluga)`} <span className="txt-rotate" dataPeriod="500" data-rotate='[  "FullStack javascrip", "Profesional Clown" ]'><span className="wrap">{text}</span></span></h1>
+                                    <h1>{`Hi! I'm Abraham Lillo (Toffy Caluga)`} <span className="txt-rotate" dataPeriod="500" data-rotate='[  "Web Developer","FullStack javascrip", "Professional Clown" ]'><span className="wrap">{text}</span></span></h1>
                                     <p>I'm a circus clown with a wide
                                         trajectory in the field. At the moment
                                         getting into full stack dev
