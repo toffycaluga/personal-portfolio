@@ -1,0 +1,38 @@
+
+.headerimg{
+    position: relative;
+    padding: 0.5em;
+    margin-left: 6.5em;
+    width: 70%;
+}
+.headerimg img{
+    position: absolute;
+
+}
+.headerimg .planet{
+    z-index: 2;
+}
+.headerimg .rocket{
+    
+    animation:animate 7s ease-in-out infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-180px,150px) scale(0.5) rotate(0deg);
+        z-index: 1;
+    }
+    50%{
+        transform: translate(150px,-120px) scale(0.5) rotate(180deg);
+        z-index: 1;
+    }
+    50.00001%{
+        transform: translate(150px,-120px) scale(0.5) rotate(180deg);
+        z-index: 3;
+    }
+    
+    100%{
+        transform: translate(-180px,150px) scale(0.5) rotate(360deg);
+        z-index: 3;
+    }
+
+}

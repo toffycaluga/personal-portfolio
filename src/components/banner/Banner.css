@@ -32,6 +32,7 @@
     width: 96%;
   }
   .banner button {
+    background:linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
     color: #fff;
     font-weight: 700;
     font-size: 20px;
@@ -49,10 +50,13 @@
   .banner button:hover svg {
     margin-left: 25px;
   }
-  .banner img {
-    animation: updown 3s linear infinite;
+  .banner a{
+    text-decoration: none;
   }
-  @keyframes updown {
+  /* .banner img {
+    animation: updown 3s linear infinite;
+  } */
+  /* @keyframes updown {
       0% {
           transform: translateY(-20px);
       }
@@ -62,8 +66,9 @@
       100% {
           transform: translateY(-20px);
       }
-  }
+  } */
   .txt-rotate > .wrap {
-    border-right: 0.08em solid #666;
+    border-right: 0.08em solid #fff;
   }
   
+

@@ -46,9 +46,9 @@ function NavBar() {
                         </Nav>
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="#git"><GitHubIcon /></a>
-                                <a href="#lin"><LinkedInIcon /></a>
-                                <a href="#insta"><InstagramIcon /></a>
+                                <a href="https://github.com/toffycaluga"><GitHubIcon /></a>
+                                <a href="https://www.linkedin.com/in/abraham-lillo-lillo/"><LinkedInIcon /></a>
+                                <a href="https://www.instagram.com/toffy_caluga/"><InstagramIcon /></a>
                             </div>
                             <HashLink to='#connect'>
                                 <button className="vvd"><span>Let’s Connect</span></button>

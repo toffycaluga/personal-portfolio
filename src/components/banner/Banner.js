@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../../assets/img/header-img.svg";
+import HeaderImg from "./HeaderImg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import './Banner.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,8 +12,10 @@ function Banner() {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["FullStack javascrip", "Profesional Clown"];
     const period = 2000;
+
+
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -21,7 +23,7 @@ function Banner() {
         }, delta);
 
         return () => { clearInterval(ticker) };
-    }, [text])
+    })
 
     const tick = () => {
         let i = loopNum % toRotate.length;
@@ -55,10 +57,22 @@ function Banner() {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{`Hi! I'm Abraham Lillo (Toffy Caluga)`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                                    <span className="tagline">Welcome to my Portfolio </span>
+                                    <h1>{`Hi! I'm Abraham Lillo (Toffy Caluga)`} <span className="txt-rotate" dataPeriod="500" data-rotate='[  "FullStack javascrip", "Profesional Clown" ]'><span className="wrap">{text}</span></span></h1>
+                                    <p>I'm a circus clown with a wide
+                                        trajectory in the field. At the moment
+                                        getting into full stack dev
+                                        javascript junior, working as a freelancer, and learning
+                                        constantly new technologies, and
+                                        specializing in react and nodejs.
+                                        I am currently looking for a company
+                                        where I can grow as a professional.</p>
+
+                                    <a href='#connect'>
+
+                                        <button >Let’s Connect <ArrowRightCircle size={25} /></button>
+                                    </a>
+
                                 </div>}
                         </TrackVisibility>
                     </Col>
@@ -66,7 +80,8 @@ function Banner() {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img" />
+                                    <HeaderImg />
+
                                 </div>}
                         </TrackVisibility>
                     </Col>
