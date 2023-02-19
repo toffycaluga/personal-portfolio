@@ -19,11 +19,11 @@ function Skills() {
             items: 3
         },
         tablet: {
-            breakpoint: { max: 1024, min: 450 },
+            breakpoint: { max: 1024, min: 464 },
             items: 2
         },
         mobile: {
-            breakpoint: { max: 4, min: 0 },
+            breakpoint: { max: 464, min: 0 },
             items: 1
         }
     };
